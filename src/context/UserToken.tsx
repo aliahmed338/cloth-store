@@ -10,7 +10,7 @@ import React, {
 // Define the shape of the context state and the type of the updater function
 interface UserContextType {
   userToken: string | null;
-  loading: boolean;
+  loading?: boolean;
   setUserToken: Dispatch<SetStateAction<string | null>>;
 }
 
