@@ -50,13 +50,18 @@ const CartContextProvider: React.FC<CartContextProviderProps> = ({
   children,
 }) => {
   const headers = {
-    token: localStorage.getItem("userToken") || "", // Ensure token is a string
+    token: localStorage.getItem("userToken") || "",
   };
+  console.log("Headers:", headers);
 
   const AddToCart = async (id: string): Promise<ICartMessage> => {
     try {
       console.log("Adding to cart with ID:", id);
       console.log("Headers:", headers);
+      // if (!token) {
+      //   console.error("No token found. User is not authenticated.");
+      //   throw new Error("User is not authenticated. Please log in.");
+      // }
       const response = await axios.post<ICartMessage>(
         `https://ecommerce.routemisr.com/api/v1/cart`,
         {
