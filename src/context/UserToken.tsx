@@ -22,7 +22,7 @@ export const UserContext = createContext<UserContextType | undefined>(
 // Define the provider's props
 interface UserContextProviderProps {
   children: ReactNode;
-  loading: boolean;
+  loading?: boolean;
 }
 
 // Create the provider component
