@@ -46,13 +46,13 @@ npm run dev
 
 💅 UI / UX
 
-Tailwind CSS for modern, responsive design
+- Tailwind CSS for modern, responsive design
 
-shadcn/ui components for a sleek, accessible interface
+- shadcn/ui components for a sleek, accessible interface
 
-Fully responsive across desktop, tablet, and mobile
+- Fully responsive across desktop, tablet, and mobile
 
-Light & Dark mode toggle
+- Light & Dark mode toggle
 
 ## 👤 Author
 
